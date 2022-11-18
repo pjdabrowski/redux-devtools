@@ -62,7 +62,7 @@ export default class TopButtons extends Component<Props> {
         {features.pause && <RecordButton paused={isPaused} />}
         {features.persist && <PersistButton />}
         {features.lock && (
-          <LockButton locked={isLocked} disabled={options.lib !== 'redux'} />
+          <LockButton locked={isLocked} disabled={false} />
         )}
         <Divider />
         <Button

@@ -125,19 +125,6 @@ export class TraceTab<S, A extends Action<unknown>> extends Component<
   render() {
     const { stackFrames, showDocsLink } = this.state;
 
-    if (showDocsLink) {
-      return (
-        <div style={rootStyle}>
-          To enable tracing action calls, you should set `trace` option to
-          `true` for Redux DevTools enhancer. Refer to{' '}
-          <a href="#" onClick={this.openDocs}>
-            this page
-          </a>{' '}
-          for more details.
-        </div>
-      );
-    }
-
     return (
       <div style={rootStyle}>
         <StackTrace
